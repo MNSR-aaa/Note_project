@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+}
+
+body {    
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 150%;
+    background-color: #F1FAEE;
+}
+
+.to_do {
+    position: relative;
+    left: 45%;
+    top: 250px;
+    text-align: center;
+    height: 35px;
+    width: 10%;
+    line-height: 26px;
+
+    background-color: #457B9D;
+
+    display: block;
+    
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #1D3557;
+    border-width: 4px;
+}
+
+.note {
+    position: relative;
+    left: 30%;
+    top: 300px;
+    text-align: center;
+    height: 70px;
+    width: 40%;
+    line-height: 65px;
+
+    background-color: #457B9D;
+
+    display: block;
+
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #1D3557;
+    border-width: 5px;
+}
+
+.btn {
+    height: 30px;
+    width: 1.8%;
+    line-height: 25px;
+    position: relative;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+}
+
+.delete_btn {
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917759.png');
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    left: 27%;
+    top: 250px;
+    background-color: #E63946;
+    border-color: #7a1e25;
+}
+.delete_btn:hover {
+    width: 2%;
+    height: 32px;
+}
+
+.done_btn {
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917749.png');
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    left: 67%;
+    top: 250px;
+    background-color: #00ce22;
+    border-color: #00530e;
+}
+
+.edit_btn {
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917457.png');
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    left: 62.5%;
+    top: 250px;
+    background-color: #3868ab;
+    border-color: #0d2343;
+}
+
+.add_task {
+    position: relative;
+    width: 3.5%;
+    height: 60px;
+    display: block;
+    border-radius: 40px;
+    border-width: 3.5px;
+
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917757.png');
+    background-position: center;
+    left: 48.5%;
+    top: 295px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-color: #fb8500;
+    border-color: #703c00;
+}
+.add_task:hover {
+    cursor: pointer;
+    height: 62px;
+    width: 62px;
+    left: 48.45%;
+}
+.add_task:active {
+    height: 58px;
+    width: 58px;
+    left: 48.5%;
+}

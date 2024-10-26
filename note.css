@@ -14,13 +14,13 @@ body {
 }
 
 .to_do {
-    position: relative;
     left: 45%;
     top: 250px;
     text-align: center;
     height: 35px;
-    width: 10%;
+    width: 180px;
     line-height: 26px;
+    position: absolute;
 
     background-color: #457B9D;
 
@@ -32,14 +32,52 @@ body {
     border-width: 4px;
 }
 
-.note {
-    position: relative;
+.note_first {
     left: 30%;
     top: 300px;
     text-align: center;
     height: 70px;
-    width: 40%;
+    width: 680px;
     line-height: 65px;
+    position: absolute;
+
+    background-color: #457B9D;
+
+    display: block;
+
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #1D3557;
+    border-width: 5px;
+}
+
+.note_second {
+    left: 30%;
+    top: 380px;
+    text-align: center;
+    height: 70px;
+    width: 680px;
+    line-height: 65px;
+    position: absolute;
+
+    background-color: #457B9D;
+
+    display: block;
+
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #1D3557;
+    border-width: 5px;
+}
+
+.note_third {
+    left: 30%;
+    top: 460px;
+    text-align: center;
+    height: 70px;
+    width: 680px;
+    line-height: 65px;
+    position: absolute;
 
     background-color: #457B9D;
 
@@ -53,53 +91,126 @@ body {
 
 .btn {
     height: 30px;
-    width: 1.8%;
+    width: 30px;
     line-height: 25px;
-    position: relative;
     border-style: solid;
     border-radius: 15px;
     border-width: 3px;
+    position: relative;
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+}
+.btn:active {
+    transform: scale(0.95, 0.95);
 }
 
-.delete_btn {
+.delete_btn1 {
     background: url('https://cdn-icons-png.flaticon.com/128/3917/3917759.png');
     background-position: center;
     background-size: 65%;
     background-repeat: no-repeat;
-    left: 27%;
-    top: 250px;
     background-color: #E63946;
     border-color: #7a1e25;
+    display: block;
+    float: left;
+    left: 1045px;
+    top: 320px;
+    z-index: 1;
 }
-.delete_btn:hover {
-    width: 2%;
-    height: 32px;
-}
-
-.done_btn {
-    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917749.png');
+.delete_btn2 {
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917759.png');
     background-position: center;
     background-size: 65%;
     background-repeat: no-repeat;
-    left: 67%;
-    top: 250px;
-    background-color: #00ce22;
-    border-color: #00530e;
+    background-color: #E63946;
+    border-color: #7a1e25;
+    display: block;
+    float: left;
+    left: 955px;
+    top: 400px;
+    z-index: 1;
+}
+.delete_btn3 {
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917759.png');
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-color: #E63946;
+    border-color: #7a1e25;
+    display: block;
+    float: left;
+    left: 865px;
+    top: 480px;
+    z-index: 1;
 }
 
-.edit_btn {
+.check_btn1 {
+    display: block;
+    float: left;
+    left: 540px;
+    top: 320px;
+}
+.check_btn2 {
+    display: block;
+    float: left;
+    left: 450px;
+    top: 400px;
+}
+.check_btn3 {
+    display: block;
+    float: left;
+    left: 360px;
+    top: 480px;
+}
+
+
+.edit_btn1 {
     background: url('https://cdn-icons-png.flaticon.com/128/3917/3917457.png');
     background-position: center;
     background-size: 65%;
     background-repeat: no-repeat;
-    left: 62.5%;
-    top: 250px;
     background-color: #3868ab;
     border-color: #0d2343;
+    display: block;
+    float: left;
+    left: 1110px;
+    top: 320px;
+    z-index: 1;
+}
+.edit_btn2 {
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917457.png');
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-color: #3868ab;
+    border-color: #0d2343;
+    display: block;
+    float: left;
+    left: 1020px;
+    top: 400px;
+    z-index: 1;
+}
+.edit_btn3 {
+    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917457.png');
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-color: #3868ab;
+    border-color: #0d2343;
+    display: block;
+    float: left;
+    left: 930px;
+    top: 480px;
+    z-index: 1;
+}
+
+.completed {
+    /* text-decoration: line-through; */
 }
 
 .add_task {
-    position: relative;
     width: 3.5%;
     height: 60px;
     display: block;
@@ -108,21 +219,11 @@ body {
 
     background: url('https://cdn-icons-png.flaticon.com/128/3917/3917757.png');
     background-position: center;
-    left: 48.5%;
-    top: 295px;
     background-size: 65%;
     background-repeat: no-repeat;
     background-color: #fb8500;
     border-color: #703c00;
-}
-.add_task:hover {
-    cursor: pointer;
-    height: 62px;
-    width: 62px;
-    left: 48.45%;
-}
-.add_task:active {
-    height: 58px;
-    width: 58px;
-    left: 48.5%;
+
+    left: 555px;
+    top: 550px;
 }

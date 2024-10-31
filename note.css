@@ -5,7 +5,7 @@
     margin: 0 0 0 0;
 }
 
-body {    
+body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -13,33 +13,48 @@ body {
     background-color: #F1FAEE;
 }
 
-.to_do {
-    left: 45%;
-    top: 250px;
+
+.title {
+    margin-bottom: 25px;
+
+    font-size: 28px;
+
     text-align: center;
     height: 35px;
     width: 180px;
     line-height: 26px;
-    position: absolute;
 
     background-color: #457B9D;
 
     display: block;
-    
+
     border-style: solid;
     border-radius: 35px;
     border-color: #1D3557;
     border-width: 4px;
 }
 
-.note_first {
-    left: 30%;
-    top: 300px;
+.all_notes {
+    border: #E63946 solid 1px;
+    max-width: 800px;
+    width: auto;
+    margin: auto;
+    margin-top: 300px;
+}
+
+@media screen and (max-width: 800px) {
+    .all_notes {
+        margin-top: 50%;
+    }
+}
+
+.note {
+    position: relative;
+
     text-align: center;
     height: 70px;
-    width: 680px;
+    width: auto;
     line-height: 65px;
-    position: absolute;
 
     background-color: #457B9D;
 
@@ -49,45 +64,10 @@ body {
     border-radius: 35px;
     border-color: #1D3557;
     border-width: 5px;
+
+    margin: 10px 0 0 0;
 }
 
-.note_second {
-    left: 30%;
-    top: 380px;
-    text-align: center;
-    height: 70px;
-    width: 680px;
-    line-height: 65px;
-    position: absolute;
-
-    background-color: #457B9D;
-
-    display: block;
-
-    border-style: solid;
-    border-radius: 35px;
-    border-color: #1D3557;
-    border-width: 5px;
-}
-
-.note_third {
-    left: 30%;
-    top: 460px;
-    text-align: center;
-    height: 70px;
-    width: 680px;
-    line-height: 65px;
-    position: absolute;
-
-    background-color: #457B9D;
-
-    display: block;
-
-    border-style: solid;
-    border-radius: 35px;
-    border-color: #1D3557;
-    border-width: 5px;
-}
 
 .btn {
     height: 30px;
@@ -96,113 +76,53 @@ body {
     border-style: solid;
     border-radius: 15px;
     border-width: 3px;
-    position: relative;
 }
+
 .btn:hover {
     cursor: pointer;
     transform: scale(1.05, 1.05);
 }
+
 .btn:active {
     transform: scale(0.95, 0.95);
 }
 
-.delete_btn1 {
+.delete_btn {
+    position: absolute;
+    right: 55px;
+    top: 15px;
+
     background: url('https://cdn-icons-png.flaticon.com/128/3917/3917759.png');
     background-position: center;
     background-size: 65%;
     background-repeat: no-repeat;
     background-color: #E63946;
     border-color: #7a1e25;
-    display: block;
-    float: left;
-    left: 1045px;
-    top: 320px;
-    z-index: 1;
-}
-.delete_btn2 {
-    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917759.png');
-    background-position: center;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-color: #E63946;
-    border-color: #7a1e25;
-    display: block;
-    float: left;
-    left: 955px;
-    top: 400px;
-    z-index: 1;
-}
-.delete_btn3 {
-    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917759.png');
-    background-position: center;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-color: #E63946;
-    border-color: #7a1e25;
-    display: block;
-    float: left;
-    left: 865px;
-    top: 480px;
+    display: inline-block;
     z-index: 1;
 }
 
-.check_btn1 {
-    display: block;
-    float: left;
-    left: 540px;
-    top: 320px;
-}
-.check_btn2 {
-    display: block;
-    float: left;
-    left: 450px;
-    top: 400px;
-}
-.check_btn3 {
-    display: block;
-    float: left;
-    left: 360px;
-    top: 480px;
+.check_btn {
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    top: 15px;
 }
 
 
-.edit_btn1 {
+.edit_btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+
+
     background: url('https://cdn-icons-png.flaticon.com/128/3917/3917457.png');
     background-position: center;
     background-size: 65%;
     background-repeat: no-repeat;
     background-color: #3868ab;
     border-color: #0d2343;
-    display: block;
-    float: left;
-    left: 1110px;
-    top: 320px;
-    z-index: 1;
-}
-.edit_btn2 {
-    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917457.png');
-    background-position: center;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-color: #3868ab;
-    border-color: #0d2343;
-    display: block;
-    float: left;
-    left: 1020px;
-    top: 400px;
-    z-index: 1;
-}
-.edit_btn3 {
-    background: url('https://cdn-icons-png.flaticon.com/128/3917/3917457.png');
-    background-position: center;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-color: #3868ab;
-    border-color: #0d2343;
-    display: block;
-    float: left;
-    left: 930px;
-    top: 480px;
+    display: inline-block;
     z-index: 1;
 }
 
@@ -211,7 +131,12 @@ body {
 }
 
 .add_task {
-    width: 3.5%;
+    margin: 10px auto 0;
+    left: 500px;
+    top: 30px;
+
+
+    width: 60px;
     height: 60px;
     display: block;
     border-radius: 40px;
@@ -223,7 +148,4 @@ body {
     background-repeat: no-repeat;
     background-color: #fb8500;
     border-color: #703c00;
-
-    left: 555px;
-    top: 550px;
 }
